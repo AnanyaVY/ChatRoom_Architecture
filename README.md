@@ -45,9 +45,7 @@ real-time. It also supports admin-level commands for managing the group.
 ## How To Run
 1. Clone the respository
 
-'''bash 
-git clone https://github.com/yourusername/pyconchat.git
-cd pyconchat'''
+<pre> ```bash git clone https://github.com/yourusername/pyconchat.git cd pyconchat ``` </pre>
 
 2. Start the Server
 
