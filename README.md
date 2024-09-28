@@ -28,17 +28,22 @@ group management within chat applications.
 ## Technologies Used
 
 1. Python Sockets: Enables TCP/IP communication between the server and multiple clients.
+   
 2. Threading: Handles simultaneous client connections and ensures concurrent processing without blocking.
+   
 3. Pickle: Serializes and deserializes Python objects to facilitate data transmission between server and client.
+   
 4. OS: Manages file operations like saving and deleting files on the server.
 
 ## File Descriptions
 
 ### client.py:
+
 The client script establishes a connection with the server, allows users to join groups, and send/receive messages. 
 It supports various commands for group management and message handling.
 
 ### server.py:
+
 The server script manages group creation, handles client requests, and broadcasts messages between clients in 
 real-time. It also supports admin-level commands for managing the group.
 
@@ -63,20 +68,29 @@ python client.py
 
 4. Interacting in the Chatroom:
 
-When the client script runs, it will prompt the user for a username and group name.
-If the group does not exist, a new group will be created with the user as the admin.
-Admins can approve/reject join requests, transfer admin privileges, kick members, and view the list of online or all members.
+    When the client script runs, it will prompt the user for a username and group name.
+    If the group does not exist, a new group will be created with the user as the admin.
+    Admins can approve/reject join requests, transfer admin privileges, kick members, and
+    view the list of online or all members.
 
 ## Commands Supported
 
 The following commands can be used by clients in the chatroom:
 
 /viewRequests - View pending join requests (Admin only).
+
 /approveRequest - Approve join requests (Admin only).
+
 /disconnect - Disconnect from the chatroom.
+
 /allMembers - View all group members.
+
 /onlineMembers - View currently online group members.
+
 /changeAdmin - Transfer admin privileges to another member (Admin only).
+
 /whoAdmin - Check the current group admin.
+
 /kickMember - Kick a member from the group (Admin only).
+
 /fileTransfer - Upload a file to the group.
