@@ -44,13 +44,16 @@ real-time. It also supports admin-level commands for managing the group.
 
 ## How To Run
 1. Clone the respository
+
 git clone https://github.com/yourusername/pyconchat.git
 cd pyconchat
 
 2. Start the Server
+
 python server.py
 
 3. Start the Client(s)
+
 python client.py
 
 4. Interacting in the Chatroom:
